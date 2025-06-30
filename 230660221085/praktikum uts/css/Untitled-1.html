@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Annisa Nur Sabariyah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<style>
+/* Aturan dasar */
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya tubuh halaman */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navigasi */
+nav {
+    background: #3498db;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #2980b9;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5em;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #2980b9;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Tentang Saya */
+.about {
+    padding: 100px 20px;
+    background: white;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    color: #2980b9;
+}
+
+.skills {
+    margin: 20px 0;
+}
+
+.progress {
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #3498db;
+    width: 0;
+    transition: width 1s;
+}
+
+/* Galeri Portofolio */
+.portfolio {
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2980b9;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #3498db;
+    color: white;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+</style>
+<head>
+
+    <body>
+        <nav>
+            <a href="#" class="logo">Annisa nur sabariyah</a>
+            <ul>
+                <li><a href="#about">Tentang saya</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero" id="home">
+            <h1>Annisa nur sabariyah</h1>
+            <p>Mahasiswa Sistem Informasi</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/callme__saaaa?igsh=YnB5MW1jYzZpZHJw" target="_blank"<i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fa-linkedin"></i></a>
+                <a href="#"><i class="fa-github"></i></a>
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <h2>Tentang saya</h2>
+            <p>Halo, saya Annisa nur sabariyah, mahasiswa aktif di jurusan Sistem Informasi Fakultas Teknologi Universitas Sebelas April.</p>
+            <h3>Keahlian</h3>
+            <div class="skills">
+                <div>HTML</div>
+                <div class="progress"><div class="progres-bar" style="width: 90%;"></div></div>
+                <div>CSS</div>
+                <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div>
+                <div>JavaScript</div>
+                <div class="progress"><div class="progress-bar" style="width: 70%;"></div></div>
+                <div>PHP</div>
+                <div class="progress"><div class="progress-bar" style="width: 60%;"></div></div>
+            </div>
+    </div>
+    <h3>Pendidikan</h3>
+    <table>
+        <tr>
+            <th>Asal Sekolah</th>
+            <th>Tahun</th>
+        </tr>
+        <tr>
+            <td>SD 2 Conggeang</td>
+            <td>2011 - 2017</td>
+        </tr>
+        <tr>
+            <td>SMP 1 Conggeang</td>
+            <td>2017 - 2020</td>
+        </tr>
+        <tr>
+            <td>MAN 1 Sumedang</td>
+            <td>2020 - 2023</td>
+        </tr>
+    </table>
+            </div>
+            <div class="portfolio" id="portofolio">
+                <h2>Galeri portopolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img
+                    </div>
+            </div>
+        </div>
+    </body>
